@@ -54,7 +54,7 @@
     <VisionMissionSection id="visi&misi" />
     <HowWeWorkSection id="proseskerja" />
     <ServicesSection id="layanan" />
-    <AdvantagesSection id="keunggulan" image="/src/assets/01.jpg" />
+    <AdvantagesSection id="keunggulan" image="/01.jpg" />
     <ContactSection id="kontak" />
     <!-- Section Referensi (klien) -->
     <LogoGridSection
