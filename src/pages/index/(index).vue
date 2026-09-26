@@ -46,7 +46,7 @@
 
     <HeroSection
       id="home"
-      background-image="/src/assets/01.jpg"
+      background-image="/01.jpg"
       :logo-position="{ top: '10px', left: '10px', width: '60px' }"
     />
 
@@ -62,19 +62,19 @@
       eyebrow="Klien Kami"
       title="Referensi"
       :logos="[
-        { name: 'Adhi Karya', image: '/src/assets/images/client/adhi-karya.png' },
-        { name: 'Sahid Jaya', image: '/src/assets/images/client/sahid-jaya.png' },
-        { name: 'Biofarma', image: '/src/assets/images/client/bio-farma.png' },
-        { name: 'Telkom Indonesia', image: '/src/assets/images/client/telkom_indonesia.png' },
-        { name: 'Agung Sedayu group', image: '/src/assets/images/client/agung-sedayu.png' },
-        { name: 'Mayora', image: '/src/assets/images/client/logo-mayora.png' },
-        { name: 'Biofarma', image: '/src/assets/images/client/bio-farma.png' },
-        { name: 'Adhi Karya', image: '/src/assets/images/client/adhi-karya.png' },
-        { name: 'Sahid Jaya', image: '/src/assets/images/client/sahid-jaya.png' },
-        { name: 'Biofarma', image: '/src/assets/images/client/bio-farma.png' },
-        { name: 'Adhi Karya', image: '/src/assets/images/client/adhi-karya.png' },
-        { name: 'Sahid Jaya', image: '/src/assets/images/client/sahid-jaya.png' },
-        { name: 'Biofarma', image: '/src/assets/images/client/bio-farma.png' },
+        { name: 'Adhi Karya', image: '/images/client/adhi-karya.png' },
+        { name: 'Sahid Jaya', image: '/images/client/sahid-jaya.png' },
+        { name: 'Biofarma', image: '/images/client/bio-farma.png' },
+        { name: 'Telkom Indonesia', image: '/images/client/telkom_indonesia.png' },
+        { name: 'Agung Sedayu group', image: '/images/client/agung-sedayu.png' },
+        { name: 'Mayora', image: '/images/client/logo-mayora.png' },
+        { name: 'Biofarma', image: '/images/client/bio-farma.png' },
+        { name: 'Adhi Karya', image: '/images/client/adhi-karya.png' },
+        { name: 'Sahid Jaya', image: '/images/client/sahid-jaya.png' },
+        { name: 'Biofarma', image: '/images/client/bio-farma.png' },
+        { name: 'Adhi Karya', image: '/images/client/adhi-karya.png' },
+        { name: 'Sahid Jaya', image: '/images/client/sahid-jaya.png' },
+        { name: 'Biofarma', image: '/images/client/bio-farma.png' },
       ]"
     />
 
@@ -83,23 +83,23 @@
       eyebrow="Partner Kami"
       title="Mitra Kami"
       :logos="[
-        { name: 'Adhi Karya', image: '/src/assets/images/client/adhi-karya.png' },
-        { name: 'Sahid Jaya', image: '/src/assets/images/client/sahid-jaya.png' },
-        { name: 'Biofarma', image: '/src/assets/images/client/bio-farma.png' },
-        { name: 'Telkom Indonesia', image: '/src/assets/images/client/telkom_indonesia.png' },
-        { name: 'Adhi Karya', image: '/src/assets/images/client/adhi-karya.png' },
-        { name: 'Sahid Jaya', image: '/src/assets/images/client/sahid-jaya.png' },
-        { name: 'Biofarma', image: '/src/assets/images/client/bio-farma.png' },
-        { name: 'Adhi Karya', image: '/src/assets/images/client/adhi-karya.png' },
-        { name: 'Sahid Jaya', image: '/src/assets/images/client/sahid-jaya.png' },
-        { name: 'Biofarma', image: '/src/assets/images/client/bio-farma.png' },
-        { name: 'Adhi Karya', image: '/src/assets/images/client/adhi-karya.png' },
-        { name: 'Sahid Jaya', image: '/src/assets/images/client/sahid-jaya.png' },
-        { name: 'Biofarma', image: '/src/assets/images/client/bio-farma.png' },
+        { name: 'Adhi Karya', image: '/images/client/adhi-karya.png' },
+        { name: 'Sahid Jaya', image: '/images/client/sahid-jaya.png' },
+        { name: 'Biofarma', image: '/images/client/bio-farma.png' },
+        { name: 'Telkom Indonesia', image: '/images/client/telkom_indonesia.png' },
+        { name: 'Adhi Karya', image: '/images/client/adhi-karya.png' },
+        { name: 'Sahid Jaya', image: '/images/client/sahid-jaya.png' },
+        { name: 'Biofarma', image: '/images/client/bio-farma.png' },
+        { name: 'Adhi Karya', image: '/images/client/adhi-karya.png' },
+        { name: 'Sahid Jaya', image: '/images/client/sahid-jaya.png' },
+        { name: 'Biofarma', image: '/images/client/bio-farma.png' },
+        { name: 'Adhi Karya', image: '/images/client/adhi-karya.png' },
+        { name: 'Sahid Jaya', image: '/images/client/sahid-jaya.png' },
+        { name: 'Biofarma', image: '/images/client/bio-farma.png' },
       ]"
     />
 
-    <FooterSection logo-image="/src/assets/logo_white-removebg-preview.png" />
+    <FooterSection logo-image="/logo_white-removebg-preview.png" />
   </q-page>
 </template>
 
