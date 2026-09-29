@@ -54,6 +54,7 @@
     <VisionMissionSection id="visi&misi" />
     <HowWeWorkSection id="proseskerja" />
     <ServicesSection id="layanan" />
+    <PortfolioSection id="portofolio" />
     <AdvantagesSection id="keunggulan" image="/01.jpg" />
     <ContactSection id="kontak" />
     <!-- Section Referensi (klien) -->
@@ -110,6 +111,7 @@ import AboutSection from '@/components/AboutSection.vue';
 import VisionMissionSection from '@/components/VisionMissionSection.vue';
 import HowWeWorkSection from '@/components/HowWeWorkSection.vue';
 import ServicesSection from '@/components/ServicesSection.vue';
+import PortfolioSection from '@/components/PortfolioSection.vue';
 import AdvantagesSection from '@/components/AdvantagesSection.vue';
 import ContactSection from '@/components/ContactSection.vue';
 import LogoGridSection from '@/components/LogoGridSection.vue';

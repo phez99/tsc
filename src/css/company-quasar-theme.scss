@@ -353,7 +353,7 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    // filter: grayscale(1);
+    filter: grayscale(1);
     opacity: 0.7;
     transition:
       filter 0.2s ease,
@@ -453,6 +453,220 @@
   padding: 1.5rem 0;
   text-align: center;
   font-size: 0.8rem;
+  color: #64748b;
+}
+
+// ---------- LOGIN PAGE ----------
+.company-login-wrap {
+  min-height: 100vh;
+  display: flex;
+}
+
+.company-login-brand {
+  flex: 1;
+  background: linear-gradient(160deg, $navy-950 0%, $navy-900 60%, $navy-800 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.company-login-brand-inner {
+  max-width: 440px;
+}
+
+.company-login-brand-logo {
+  height: 56px;
+}
+
+.company-login-form-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  background: #f8fafc;
+}
+
+.company-login-form-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.company-login-mobile-logo {
+  height: 44px;
+  margin-bottom: 1.5rem;
+  // logo berwarna putih, jadi butuh latar gelap di atas background terang
+  background: $navy-900;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  box-sizing: content-box;
+}
+
+// ---------- DASHBOARD LAYOUT ----------
+.q-header.company-dash-header {
+  background: $navy-900 !important;
+  border-bottom: 1px solid $navy-800;
+}
+
+.company-dash-drawer {
+  background: $navy-950 !important;
+  border-right: 1px solid $navy-800;
+}
+
+.company-dash-brand {
+  padding: 1.25rem 1.5rem;
+
+  img {
+    height: 36px;
+  }
+}
+
+.q-item.company-dash-menu-item {
+  color: #cbd5e1;
+  border-radius: 8px;
+  margin: 2px 12px;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  &.q-router-link--active {
+    background: rgba(245, 158, 11, 0.12);
+    color: $amber-600;
+  }
+}
+
+.company-dash-page-bg {
+  background: #f1f5f9;
+}
+
+.q-card.company-dash-card {
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
+}
+
+// ---------- PORTOFOLIO PROYEK ----------
+// Tombol filter kategori (di atas latar gelap)
+.q-btn.company-filter-btn {
+  background: rgba(30, 41, 59, 0.8) !important;
+  color: #cbd5e1 !important;
+  border: 1px solid #334155;
+  border-radius: 9999px;
+  padding: 0 1.25rem;
+  font-weight: 500;
+
+  &:hover {
+    background: #334155 !important;
+  }
+
+  &.company-filter-btn--active {
+    background: linear-gradient(135deg, $gold-light 0%, $amber-600 50%, $amber-700 100%) !important;
+    color: $navy-950 !important;
+    border-color: transparent;
+    font-weight: 700;
+  }
+}
+
+// Area gambar proyek
+.company-project-media {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background: $navy-900;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+}
+
+.q-card.project-card:hover .company-project-media img {
+  transform: scale(1.08);
+}
+
+// Overlay gelap yang muncul saat hover (aturan opacity: 1 sudah ada di .project-card)
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(9, 13, 22, 0.8), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.company-project-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $navy-950;
+  background: $gold-light;
+  border-radius: 9999px;
+  padding: 0.2rem 0.7rem;
+}
+
+// Kalau foto proyek belum ada / gagal load
+.company-project-placeholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+  background: linear-gradient(135deg, $navy-900 0%, $navy-800 100%);
+}
+
+// ---------- DASHBOARD: TABEL & DETAIL ----------
+.company-dash-table {
+  thead th {
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #475569;
+  }
+
+  tbody tr {
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background: rgba(245, 158, 11, 0.06);
+    }
+  }
+}
+
+.company-info-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 0.15rem;
+}
+
+.company-info-value {
+  font-weight: 500;
+  color: #0f172a;
+}
+
+// ---------- APPROVAL: TIMELINE RIWAYAT ----------
+.q-timeline .q-timeline__title {
+  color: #0f172a;
+  font-size: 0.9rem;
+}
+
+.q-timeline .q-timeline__subtitle {
   color: #64748b;
 }
 
